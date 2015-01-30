@@ -2,25 +2,25 @@ from flask import Flask, render_template
 app=Flask(__name__)
 
 ################ routes proativ cars
-@app.route('/concessionaria')
+@app.route('/')
 def index():
-	return render_template('/concessionaria/index.php')
+	return render_template('/index.php')
 
-@app.route('/concessionaria/cadastro')
+@app.route('/cadastro')
 def cadastro():
-	return render_template('concessionaria/cadastro.php')
+	return render_template('/cadastro.php')
 
-@app.route('/concessionaria/chevrolet')
+@app.route('/chevrolet')
 def chevrolet():
-	return render_template('concessionaria/chevrolet.php')
+	return render_template('/chevrolet.php')
 
-@app.route('/concessionaria/login')
+@app.route('/login')
 def login():
-	return render_template('concessionaria/login.php')
+	return render_template('/login.php')
 
-@app.route('/concessionaria/revisao')
+@app.route('/revisao')
 def revisao():
-	return render_template('concessionaria/revisao.php')
+	return render_template('/revisao.php')
 ################ routes proativ cars
 if __name__=='__main__':
 	app.debug = True
